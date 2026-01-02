@@ -201,7 +201,7 @@ async function getOpenAIExplanation(text, apiKey, responseMode) {
  * @returns {Promise<string>} - The explanation
  */
 async function getGeminiExplanation(text, apiKey, responseMode) {
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`;
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
   const isDirectMode = responseMode === "direct";
 
